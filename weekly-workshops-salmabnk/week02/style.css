@@ -1,0 +1,109 @@
+#welcome{
+    text-align: center;
+}
+header {
+  /* Start on Row 1 */
+  grid-row: 1;
+  /* Start on the first column line and extend all the to the last column line */
+  grid-column: 1 / 4;
+}
+ul {
+list-style-type: square;
+list-style-position: inside;
+}
+
+li.a span{
+    background-color: rgb(162, 162, 214);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;   /* shrink to fit text only */
+    min-width: 80px;  
+    color: var(--text-color);       /* prevent too small on narrow screens */
+}
+li.b span{
+    background-color: blanchedalmond;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;   /* shrink to fit text only */
+    min-width: 80px;  
+    color: var(--text-color);
+}
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: var(--text-color); 
+}
+
+tbody tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+th {
+  background-color: #4CAF50; /* header background */
+  color: white;
+}
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates three equal columns */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* Style each section inside the grid */
+.main-content section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure images and videos are centered */
+img, video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Default light mode */
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Dark mode */
+body.dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+}
+
+/* Button Styling */
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a4725d;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
