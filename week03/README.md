@@ -1,3 +1,17 @@
-# COMP2110 Week XX
+# COMP2110 Week 03
 
-Briefly summarise the work you've done this week here.
+# Task 1: Inspect HTTP Requests
+
+Answer the following:
+
+What HTTP methods are used (GET, POST, etc.)?
+
+
+What response codes do you see (200 OK, 404 Not Found, etc.)?
+
+Look at the request and response headers. What information is included?
+
+# Command Line Arguments
+cd week03
+cd ..
+mkdir foldername
