@@ -3,7 +3,6 @@
 Briefly summarise the work you've done this week here.
 # Task 1
 # How should we use DevTools
-
 Right-click → Inspect
 
 Look for the following in the website (you can choose MDN):  
