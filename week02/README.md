@@ -36,10 +36,7 @@ Create an HTML file with media element
         <section> List all of the units you have completed at MQ in a table, where the table header includes three columns, i.e., unit code, unit name and year </section>
         <section> Embed two images with caption by using <figure> tag. One image should be copied into your project (make sure you are allowed to copy it), and the other should use a remote URL. </section>
 
-src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Building_at_Macquarie_University.jpg"
-
-
-        
+src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Building_at_Macquarie_University.jpg"       
         <section> Embed a video with <video> tag using a remote URL (eg. https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm hosted by MDN).</section>
         <footer> Copyright </footer>
     Add id attributes to each of the sections so that you can target them individually with your stylesheet
