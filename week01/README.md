@@ -6,7 +6,7 @@ Completed non-workshop activities.
 1. open a terminal. Select git bash
 
 git config user.name "Your Name"
-git config user.email "your.email@example.com"
+git config user.email "yo+ur.email@example.com"
  
 check if it is correct 
 git config user.name

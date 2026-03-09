@@ -4,7 +4,6 @@
 
 Answer the following:
 
-What HTTP methods are used (GET, POST, etc.)?
 
 What response codes do you see (200 OK, 404 Not Found, etc.)?
 
