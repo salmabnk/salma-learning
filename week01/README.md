@@ -6,10 +6,12 @@ Completed non-workshop activities.
 1. open a terminal. Select git bash
 
 git config user.name "Your Name"
+
 git config user.email "your.email@example.com"
  
 check if it is correct 
 git config user.name
+
 git config user.email
 
 Press `q` to exit
@@ -19,6 +21,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 
 2. How to commit?
+git add .
 git commit -m "initial_setup_done"
 
 Add Changes to the Last Commit (Keep Same Message)
