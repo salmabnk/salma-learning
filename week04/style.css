@@ -1,0 +1,21 @@
+
+body{
+    background-color:darkorchid;
+}
+#actions {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 5px;
+}
+
+#actions li {
+    background-color: crimson;
+    display: inline-block;
+}
+
+#actions button {
+    background-color: darkgreen;
+    color: wheat;
+    width: 100px;
+    height: 100px;
+}
