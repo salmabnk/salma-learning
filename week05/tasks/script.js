@@ -12,8 +12,7 @@ const renderBooks = (bookArray) => {
     content += `<li>${book.title} by <em> ${book.author}</em></li>`
   };
   content += "</ul>";
-  target.innerHTML = content;
-  
+  target.innerHTML = content;  
 };
 
 const renderBooksDetailedView = (bookArray) => {
@@ -33,10 +32,8 @@ const renderBooksDetailedView = (bookArray) => {
   content += "</div>";
   target.innerHTML = content;
   };
-
 // global variable to record which view is current
 let display = "list";
-
 // an event handler for the control button
 document.getElementById('control').onclick = (event) => {
     console.log('control button clicked');
@@ -48,12 +45,14 @@ document.getElementById('control').onclick = (event) => {
     loadData();
 };
 
+
+
 const render = () =>{
-      if (display == 'grid') {
-         renderBooksDetailedView(allBooks.books);
+    if (display == 'grid') {
+      renderBooksDetailedView(allBooks.books);
      }
     else {
-       renderBooks(allBooks.books);
+      renderBooks(allBooks.books);
       }
     }
 
@@ -65,7 +64,6 @@ const loadData = () => {
       render();
     })
   }
-
 
 window.onload = () => {
     loadData();
