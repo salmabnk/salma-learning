@@ -1,0 +1,41 @@
+body {
+  background-color:white;
+}
+
+h1 {
+  color:rgb(195, 28, 61);
+}
+.book-grid {
+    display: flex;
+    flex-wrap: wrap; /* allows items to move to next row when needed */
+}
+
+.book {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: lightsteelblue;
+    border-radius:3%;
+}
+
+.book img {
+    width: 250px;
+    margin: 24px;
+}
+/* removes default indentation from <dd> (description values) */
+.book dl dd {
+    margin-inline-start: 0
+}
+
+/* add a colon automatically after each <dt> (label) */
+.book dl dt::after {
+    content: ":"
+}
+
+.book dl dt {
+  font-weight: bold;    /* make labels bold */
+  float: left;          /* align labels to the left */
+  clear: left;          /* each label starts on a new line */
+  padding-right: 0.5em; /* space between label and value */
+}

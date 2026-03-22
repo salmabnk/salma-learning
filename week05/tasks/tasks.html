@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP2110 Week 05</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    Briefly summarise the work you've done in the README.md
+    <h1>Looking at JSON over HTTP</h1>
+
+    <p>This week we introduces the JSON format for data exchange.  This is commonly used to send information over the web in a machine readable way.  We'll start with an exercise looking at the difference between HTML and JSON responses.</p>
+
+    <ol><li>Open Library Book API provides a machine readable API to data about books.</li>
+    <li>You can request pages relating to books as HTML but also get a JSON version of the same data.</li>
+    <li> Here are two similar URLs:
+
+    <ul><li>https://openlibrary.org/works/OL45804W</li>
+        <li>https://openlibrary.org/works/OL45804W.json</li></ul>
+
+    <li>Accessing each URL and see what result you get. The first should be an HTML page, the second is a JSON document.
+        <li>Use your developer tools to look at the HTTP requests and responses in each case.</li>
+        <li>In the first case, the response is a redirect to another page - what is the status code and where is the browser redirected to?</li>
+        What is the Content-Type of the two responses?
+        Can you see the JSON well formatted - if not, look for a browser extension that helps you view the JSON data.
+        <li>Compare the information returned in both responses - does the JSON have the same information as presented in the HTML page? Is there anything missing?</li>
+    </li></ol>
+    <h1>Web Application Exercise</h1>
+
+    <p>Your task for this week is to use the techniques covered in this week's videos to write a simple web application that displays a list of books with a button that changes the view.</p>
+
+    <h3>You are provided with three files:</h3>
+
+        <li>index.html is a starter HTML file that loads the main script file</li>
+        <li>script.js is where you will write your code, it contains an array with a list of books</li>
+        <li>books.json is a JSON version of the book data</li>
+
+    <p>Download these files (right click and 'save link as') and put them into this week's folder in your weekly-workshops project. Commit the initial versions of these files.</p>
+
+    <h3>Your task is to create the files script.js and style.css that are loaded by this page to implement the following:</h3>
+
+        <ol><p><li>Write the function renderBooks that takes the array of book objects and renders them in the page as a simple list with the title and author of each book.</li>
+            <li>The function should find the content div within the page and insert the book list into that.</li>
+            <li>Note that the window.onload handler in the script will call renderBooks when the page loads.</br>Test this and ensure that your code is displaying the list of books correctly. </li>
+            <li>Write a second function called detailedView that displays more information about each book including the image referenced in the imageLink property.  Modify the window.onload handler to call this function instead of the first one.</li>
+            <li>Now that both views work. Implement the onclick handler for the button in the page so that it switches between the two views.   You will need a global variable to record which view is current so that your function can switch to the other one.</li>
+            <li>Note that this variable will change so you need to declare it with 'let'.</li>
+            <li>Once you have view switching working, write a stylesheet style.css that displays the detailed list of books as a grid rather than a list.</p></li></ol>
+
+    <h3>This is your checkpoint for this week. </h3>Commit and push your code to Github and show your work to your tutor.
+    <h3>As a further exercise, add some more features to your app:</h3>
+
+        A search form that let's you search book titles or authors. You should write a 'submit' handler for the form that updates the display with the filtered list of books matching the search term.
+        Write more event handlers, for example, clicking on the title of a book in the book list view could show the book image somewhere in the page, alternately, add a button to each book listing to do this.
+        When you click on a book title in the short list, show the full details of that book in the same page.
+</body>
+</html>
