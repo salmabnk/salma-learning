@@ -1,6 +1,6 @@
 
 // a list of book objects
-let allBooks = [] ;
+let allBooks = [];
 
 // a function to generate a display of all of the books
 // in an array

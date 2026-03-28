@@ -15,6 +15,8 @@ const renderBooks = (bookArray) => {
   target.innerHTML = content;  
 };
 
+
+
 const renderBooksDetailedView = (bookArray) => {
   const target = document.getElementById('content');
   let content = '<div class ="book-grid">';
@@ -26,7 +28,8 @@ const renderBooksDetailedView = (bookArray) => {
     <dl class="book-description">
                 <dt>Language</dt><dd>${book.language}</dd>
                 <dt>Country</dt><dd>${book.country}</dd>
-            </dl>
+                <dt>Wikipedia</dt><dd><a href ="${book.link}" alt = "_Blank"> View Page </a></dd>
+        </dl>
     </div>`
   };
   content += "</div>";
@@ -44,6 +47,7 @@ document.getElementById('control').onclick = (event) => {
     }
     loadData();
 };
+
 
 
 
