@@ -12,3 +12,4 @@ Look at the request and response headers. What information is included?
 cd week03
 cd ..
 mkdir foldername
+
