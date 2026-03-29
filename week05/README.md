@@ -5,6 +5,7 @@ Briefly summarise the work you've done this week here.
 
     https://openlibrary.org/works/OL45804W
     https://openlibrary.org/works/OL45804W.json
+    
 
 
     In the first case, the response is a redirect to another page - what is the status code and where is the browser redirected to?
