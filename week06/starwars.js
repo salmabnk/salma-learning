@@ -12,7 +12,8 @@ class StarWars extends LitElement {
 
   constructor() {
     super();
-    this.film = 1;           // default film number
+    // default film number
+    this.film = 1;          
     this.title = '';
     this.director = '';
   }
@@ -40,7 +41,8 @@ class StarWars extends LitElement {
   render() {
     return html`
       <div>
-        <h2>Title of the film: ${this.title || 'Loading...'}</h2>
+        <h2>Film: ${this.film}</h2>
+        <h3>Title of the film: ${this.title || 'Loading the film...'}</h3>
         <p>Director: ${this.director}</p>
       </div>
     `;

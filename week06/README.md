@@ -61,7 +61,7 @@ Name must contain a hyphen and be lower case. `<my-target>`, `<this-thing>` but 
 
 ## Shadow DOM
 
-You can't see inside of `<input type=checkbox>`.  It's useful sometimes to be able to hide
+You can't see inside of `<input type=checkbox>`. It's useful sometimes to be able to hide
 the details of our implementation of custom elements.  Eg. the global CSS
 styles shouldn't apply.  
 

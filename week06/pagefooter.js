@@ -5,18 +5,20 @@ class PageFooter extends LitElement {
     static properties = {
        currentYear: { type: Number }
     };
-  constructor() {
+constructor() {
     super();
     this.currentYear = new Date().getFullYear();
   }
    
 static styles = css`
   footer {
+    background: linear-gradient( #a06636, #3bc229); 
     display: block;
     padding: 10px;
-    background: #eee;
     text-align: center;
   }
+    p {
+      text-shadow: 1px 1px 2px #9e5f18; }
 `;
     render() {
         return html`

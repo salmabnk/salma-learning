@@ -9,18 +9,8 @@ class PageHeader extends LitElement {
 
     static styles = css`
         :host { font-family: monospace; }
-        header {
-                background-color: bisque;
-                background: linear-gradient( #c4d36f, #ac7d62); 
-                display: flex;
-                flex-direction: column;
-                align-items: center; 
-        }
-        img {
-            border: 1px solid black;
-            width: 200px;
-            height: 300px;
-        }
+        header { background-color: pink; }
+        img { border: 1px solid black; width: 100px; height: 100px; }
     `;
 
     render() {
