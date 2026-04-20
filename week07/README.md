@@ -4,4 +4,3 @@ Briefly summarise the work you've done this week here.
 Github updated remote repo
 2026
 
-Local changes
