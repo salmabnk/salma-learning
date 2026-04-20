@@ -23,7 +23,7 @@ class PageFooter extends LitElement {
     render() {
         return html`
         <footer>
-            Copyright ${this._year} &copy; Steve Cassidy 
+            Copyright ${this._year} &copy; Salma Khan
         </footer>`
     }
 }
