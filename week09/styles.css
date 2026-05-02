@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2em;
+}
+
+#error-message {
+  color: red;
+  margin-bottom: 1em;
+}
+
+button {
+  padding: 0.5em 1em;
+}
