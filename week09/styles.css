@@ -1,13 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 2em;
+#refreshBtn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer; /* THIS is what makes it feel clickable */
+  user-select: none;
 }
 
-#error-message {
-  color: red;
-  margin-bottom: 1em;
-}
-
-button {
-  padding: 0.5em 1em;
-}
