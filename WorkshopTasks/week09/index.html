@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote of the Day</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <script src="script.js" defer></script> -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+  
+  <h2>Quote of the Day</h2>
+
+  <!-- Task 1: Add an aria-live region here -->
+  <div id="quoteStatus" aria-live="polite"></div>
+
+  <button id="get-quote">Get New Quote</button>
+  <button id="clear-quote">Clear</button>  
+ 
+  <!-- Task 4: Convert this into a listbox later if needed -->
+  <p id="quote-output">Click the button to load a quote. </p>
+  <h3>Pick a Quote</h3>
+  <p>Click a quote to start. Use ↑ and ↓ arrow keys to navigate. Press Enter or Space to select a quote.</p>
+
+  <ul id="quoteList" role="listbox">
+    <li tabindex="0" role="option" aria-selected="false">"Knowledge is power."</li>
+    <li tabindex="0" role="option" aria-selected="false">"Simplicity is the ultimate sophistication."</li>
+    <li tabindex="0" role="option" aria-selected="false">"Stay hungry, stay foolish."</li>
+  </ul>
+
+  <p id="selected-quote">No quote selected.</p>
+
+  <!-- Task 3: Add your modal markup here -->
+  <!-- role="dialog" → identifies modal purpose
+  aria-modal="true" → tells screen readers background is inactive
+  aria-labelledby="modal-title" → connects heading to modal announcement
+  hidden → controls visibility accessibly -->
+  <button id="open-modal">Open Modal</button>
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <h2 id="modal-title">Help</h2>
+
+  <p>This app displays a quote each time you click the "Get New Quote" button.</p>
+
+  <button id="close-modal">Close</button>
+  </div>
+  <!-- Task 2: Add your custom keyboard-accessible button here  &#128257; Refresh-->
+  <div id="refreshBtn" role="button" tabindex="0" aria-label="Refresh content">🔁 Refresh</div>
+        
+</body>
+</html>
